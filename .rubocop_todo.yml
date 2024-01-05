@@ -21,6 +21,8 @@ Metrics/CyclomaticComplexity:
 # Configuration parameters: CountComments, CountAsOne, AllowedMethods, AllowedPatterns.
 Metrics/MethodLength:
   Max: 12
+  Exclude:
+    - 'db/migrate/*'
 
 # Offense count: 1
 # Configuration parameters: AllowedMethods, AllowedPatterns.
