@@ -84,5 +84,6 @@ test:
 production:
   <<: *default
   database: dataprop_production
-  username: dataprop
-  password: <%= ENV["DATAPROP_DATABASE_PASSWORD"] %>
+  username: postgres
+  password: <%= ENV["POSTGRES_PASSWORD"] %>
+  host: <%= ENV["DB_HOST"] %>
