@@ -11,6 +11,12 @@
 # AllowedMethods: refine
 Metrics/BlockLength:
   Max: 26
+  Exclude:
+  - 'db/**/*'
+
+Metrics/AbcSize:
+  Exclude:
+  - 'db/migrate/*'
 
 # Offense count: 1
 # Configuration parameters: AllowedMethods, AllowedPatterns.
