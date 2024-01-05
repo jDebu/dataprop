@@ -21,6 +21,8 @@ Metrics/CyclomaticComplexity:
 # Configuration parameters: CountComments, CountAsOne, AllowedMethods, AllowedPatterns.
 Metrics/MethodLength:
   Max: 12
+  Exclude:
+    - 'db/migrate/*'
 
 # Offense count: 1
 # Configuration parameters: AllowedMethods, AllowedPatterns.
@@ -35,8 +37,9 @@ Style/Documentation:
     - 'test/**/*'
     - 'app/helpers/application_helper.rb'
     - 'app/mailers/application_mailer.rb'
-    - 'app/models/application_record.rb'
+    - 'app/models/*'
     - 'app/controllers/*'
+    - 'db/migrate/*'
     - 'config/application.rb'
 
 # Offense count: 1
